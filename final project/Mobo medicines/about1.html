@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="about.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<title>ABOUT US</title>
+<style>#hh{font-size:30px; color:#6699cc;} #tt{font-size:25px;} #main{margin:top:0;} h1{color:#ff3333;}
+body{
+	background-image: url("loginbackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<span class="open">
+<a href="#" onclick="openslide()">
+<svg width="30" height="30">
+<path d="M0,5 30,5" stroke="#12908E" stroke-width="5"/>
+<path d="M0,14 30,14" stroke="#12908E" stroke-width="5"/>
+<path d="M0,23 30,23" stroke="#12908E" stroke-width="5"/></svg>
+</a>
+</span></nav>
+<div id="sidebar" class="side">
+<a href="#" class="close" onclick="closeslide()">&times;</a>
+<a href="hh1.php">HOME</a>
+<a href="about1.html">ABOUT</a>
+<a href="contact.html">CONTACT US</a>
+<a href="login.php">LOGIN/SIGNUP</a>
+</div>
+<div id="main">
+<h1 style="color: black">ABOUT US</h1>
+<h2 style="color: black">Why MoboMedicines?</h2>
+						<p style="color: black">It seems like getting the right medical treatment quickly is getting harder.<br>
+
+Sound familiar?<br>
+The MoboMedicines was created after growing frustration at the inefficiencies that prevented people from getting the treatment they need, when they needed it.
+
+We started with the aim of providing a dependable and personal online service. Our experts have years of industry experience to allow you to safely buy medicines online through our specialist website.</p>
+ <p id="hh" style="color: black">We always endeavour to help you out.</p>
+<ul style="color: black">
+							<li>24/7 available</li>
+							<li>Variety of Medicines to Choose from</li>
+							<li>Original Medicines</li>
+							<li>Reasonable Price</li>
+						</ul>
+
+</div>
+<script>
+function openslide(){
+document.getElementById("sidebar").style.width="250px";
+document.getElementById("main").style.marginLeft="250px";
+}
+
+function closeslide(){
+document.getElementById('sidebar').style.width='0';
+document.getElementById('main').style.marginLeft='0';
+}
+
+</script></body>
+</html>
